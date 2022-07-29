@@ -1,0 +1,69 @@
+div {
+    font-family: Arial;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 600px;
+    width: 700px;
+    margin: auto;
+}
+
+.left-container {
+    width: 250px;
+    background-color: lightgray;
+    border-style: solid;
+
+    border-color: gray;
+}
+
+.right-container {
+    background-color: lightgray;
+    border-style: solid;
+
+    border-color: gray;
+}
+
+.screen-title {
+    height: 40px;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.screen-container {
+    height: 500px;
+    background-color: gray;
+    overflow: auto;
+}
+
+.price-screen {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.button-container {
+    height: 300px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-style: solid;
+    border-color: gray;
+}
+
+.item-box {
+    height: 30px;
+    background-color: rgb(180, 180, 180);
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.delete-button {
+    margin-top: 4px;
+    position: absolute;
+    right: 10px;
+}
