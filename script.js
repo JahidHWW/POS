@@ -2,9 +2,16 @@ const screens = document.getElementById('screen');
 const price = document.getElementById('price');
 let total = 0;
 
-let productOne = { item: 'Pepsi-can', price: 1.99, };
-let productTwo = { item: 'snack', price: 2.99, };
-let bag = { item: 'Bag', price: 0.05, };
+let DrinkProducts = [
+    { item: 'Pepsi-can', price: 1.99, }
+];
+let snackProducts = [
+    { item: 'snack', price: 2.99, }
+];
+
+let miscellaneousProducts = [
+    { item: 'Bag', price: 0.05, }
+];
 
 
 function create(product) {
