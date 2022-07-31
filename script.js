@@ -33,12 +33,13 @@ function create(product) {
     deleteButton.onclick = deleteItem;
     createItem.appendChild(deleteButton);
 
-    // if (product.id === 'Bottle') {
-    //     const bottleDep = document.createElement('div');
-    //     bottleDep.innerText = '$ ' + Dep;
-    //     screens.appendChild(bottleDep);
-    //      total = total + Dep;
-    //   }
+    //bottle deposit check
+    if (product.id === 'Bottle') {
+        const bottleDep = document.createElement('div');
+        bottleDep.innerText = '$ ' + Dep;
+        createItem.appendChild(bottleDep);
+        total = total + Dep;
+    }
 
     //update total price
     total = total + product.price;
@@ -50,6 +51,10 @@ function create(product) {
         createItem.remove();
         createItem.style.backgroundColor = "none"
         total = total - product.price;
+        //bottle Deposit
+        if (product.id === 'Bottle') {
+            total = total - Dep;
+        }
         total = Math.round(total * 100) / 100;
         price.innerText = '$ ' + total;
     }
