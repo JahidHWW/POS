@@ -1,9 +1,13 @@
 const screens = document.getElementById('screen');
 const price = document.getElementById('price');
-let total = 0;
+let total = 0.00;
+price.innerText = '$ ' + total;
+
 
 let DrinkProducts = [
-    { item: 'Pepsi-can', price: 1.99, }
+    { item: 'Pepsi-can', price: 1.99, },
+    { item: 'Arizona-Lemon Ice Tea', price: 0.99, },
+    { item: 'Aquafina-small', price: 2.49, }
 ];
 let snackProducts = [
     { item: 'snack', price: 2.99, }

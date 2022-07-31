@@ -4,24 +4,32 @@ div {
 
 .app-container {
     display: grid;
-    grid-template-columns: 250px 1fr;
-    height: 600px;
-    width: 700px;
+    grid-template-columns: 350px 1fr;
+    height: 800px;
     margin: auto;
 }
 
 .left-container {
-    width: 250px;
     background-color: lightgray;
     border-style: solid;
-
     border-color: gray;
+}
+
+.drinks-title,
+.snacks-title {
+    text-align: center;
+}
+
+.button-column-one,
+.button-column-two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .right-container {
     background-color: lightgray;
     border-style: solid;
-
     border-color: gray;
 }
 
@@ -34,7 +42,7 @@ div {
 }
 
 .screen-container {
-    height: 500px;
+    height: 670px;
     background-color: gray;
     overflow: auto;
 }
@@ -49,21 +57,54 @@ div {
     background-color: lightgray;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     border-style: solid;
     border-color: gray;
 }
 
+.button1,
+.button2,
+.button3 {
+    margin-top: 5px;
+    height: 40px;
+    width: 65px;
+}
+
+.button1 {
+    background: url(pepsi.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.button2 {
+    background: url(arizonaDrink.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.button3 {
+    background: url(aquafina.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .item-box {
-    height: 30px;
+    height: 60px;
     background-color: rgb(180, 180, 180);
     margin-bottom: 2px;
     position: relative;
 }
 
 .delete-button {
-    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 10px;
 }

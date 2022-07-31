@@ -8,8 +8,17 @@
         <div class="app-container">
             <div class="left-container">
                 <div class="button-container">
-                    <button onclick="create(DrinkProducts[0])" class="button">Bottle-1</button>
-                    <button onclick="create(snackProducts[0])" class="button">Snack-1</button>
+                    <div class="button-column-one">
+                        <div class="drinks-title">Drinks</div>
+                        <button onclick="create(DrinkProducts[0])" class="button1"></button>
+                        <button onclick="create(DrinkProducts[1])" class="button2"></button>
+                        <button onclick="create(DrinkProducts[2])" class="button3"></button>
+                    </div>
+                    <div class="button-column-two">
+                        <div class="snacks-title">Snacks</div>
+                        <button onclick="create(snackProducts[0])" class="button">Snack-1</button>
+                    </div>
+                   
                     <button onclick="create(miscellaneousProducts[0])">bag</button>
                     <button>food</button>
                 </div>
