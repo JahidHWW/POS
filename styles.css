@@ -65,7 +65,8 @@ div {
 
 .button1,
 .button2,
-.button3 {
+.button3,
+.snack-button1 {
     margin-top: 5px;
     height: 40px;
     width: 65px;
@@ -89,6 +90,13 @@ div {
 
 .button3 {
     background: url(aquafina.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.snack-button1 {
+    background: url(mm.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

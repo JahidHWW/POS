@@ -1,13 +1,14 @@
 const screens = document.getElementById('screen');
 const price = document.getElementById('price');
 let total = 0.00;
+let Dep = 0.05;
 price.innerText = '$ ' + total;
 
 
 let DrinkProducts = [
-    { item: 'Pepsi-can', price: 1.99, },
-    { item: 'Arizona-Lemon Ice Tea', price: 0.99, },
-    { item: 'Aquafina-small', price: 2.49, }
+    { item: 'Pepsi-can', price: 1.99, id: 'Bottle' },
+    { item: 'Arizona-Lemon Ice Tea', price: 0.99, id: 'Bottle' },
+    { item: 'Aquafina-small', price: 2.49, id: 'Bottle' }
 ];
 let snackProducts = [
     { item: 'snack', price: 2.99, }
@@ -31,6 +32,13 @@ function create(product) {
     deleteButton.innerText = 'X';
     deleteButton.onclick = deleteItem;
     createItem.appendChild(deleteButton);
+
+    // if (product.id === 'Bottle') {
+    //     const bottleDep = document.createElement('div');
+    //     bottleDep.innerText = '$ ' + Dep;
+    //     screens.appendChild(bottleDep);
+    //      total = total + Dep;
+    //   }
 
     //update total price
     total = total + product.price;
