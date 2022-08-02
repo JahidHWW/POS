@@ -5,19 +5,32 @@ div {
 .app-container {
     display: grid;
     grid-template-columns: 350px 1fr;
-    height: 800px;
+    height: 700px;
     margin: auto;
+    border-style: solid;
 }
 
 .left-container {
     background-color: lightgray;
-    border-style: solid;
-    border-color: gray;
+}
+
+.button-container {
+    height: 400px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 .drinks-title,
 .snacks-title {
     text-align: center;
+}
+
+.column {
+    overflow: scroll;
+    height: 350px;
 }
 
 .button-column-one,
@@ -26,6 +39,8 @@ div {
     justify-content: space-between;
     flex-direction: column;
 }
+
+.service-functions {}
 
 .right-container {
     background-color: lightgray;
@@ -42,38 +57,44 @@ div {
 }
 
 .screen-container {
-    height: 670px;
-    background-color: gray;
+    height: 600px;
+    background-color: white;
     overflow: auto;
 }
 
 .price-screen {
-    background-color: lightgray;
+    background-color: lightgreen;
     font-weight: bold;
-}
-
-.button-container {
-    height: 300px;
-    background-color: lightgray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    border-style: solid;
-    border-color: gray;
 }
 
 .button1,
 .button2,
 .button3,
-.snack-button1 {
+.button4,
+.button5,
+.button6,
+.button7,
+.button8,
+.button9,
+.button10,
+.snack-button1,
+.snack-button2,
+.snack-button3,
+.snack-button4,
+.snack-button5,
+.snack-button6,
+.snack-button7,
+.snack-button8,
+.snack-button9,
+.snack-button10 {
     margin-top: 5px;
-    height: 40px;
-    width: 65px;
+    height: 55px;
+    width: 85px;
+    display: block;
 }
 
 .button1 {
-    background: url(pepsi.png);
+    background: url(productPicture/drinkProducts/aquafina.jpeg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,7 +102,7 @@ div {
 }
 
 .button2 {
-    background: url(arizonaDrink.png);
+    background: url(productPicture/drinkProducts/fijiWater.jpeg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -89,17 +110,147 @@ div {
 }
 
 .button3 {
-    background: url(aquafina.png);
+    background: url(productPicture/drinkProducts/pepsi.webp);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.button4 {
+    background: url(productPicture/drinkProducts/canadaDry.jpg);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button5 {
+    background: url(productPicture/drinkProducts/gato-blue.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button6 {
+    background: url(productPicture/drinkProducts/gato-lemonLime.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button7 {
+    background: url(productPicture/drinkProducts/nakedMango.jpeg);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button8 {
+    background: url(productPicture/drinkProducts/nakedGreen.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button9 {
+    background: url(productPicture/drinkProducts/arizonaDrink.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button10 {
+    background: url(productPicture/drinkProducts/pureleaf-Resberry.jpeg);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .snack-button1 {
-    background: url(mm.jpeg);
+    background: url(productPicture/snackProducts/mm-peanut.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button2 {
+    background: url(productPicture/snackProducts/mm-chocolate.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button3 {
+    background: url(productPicture/snackProducts/hersheys-CnC.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button4 {
+    background: url(productPicture/snackProducts/hersheys-wholeAlmonds.webp );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button5 {
+    background: url(productPicture/snackProducts/welchs-mixedFruit.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button6 {
+    background: url(productPicture/snackProducts/welchs-islandFruit.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button7 {
+    background: url(productPicture/snackProducts/haribo-goldBear.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button8 {
+    background: url(productPicture/snackProducts/haribo-happyCola.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button9 {
+    background: url(productPicture/snackProducts/skittles-sour.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button10 {
+    background: url(productPicture/snackProducts/sourpatch-extreme.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
 }
 
 .item-box {
@@ -108,6 +259,27 @@ div {
     margin-bottom: 2px;
     position: relative;
 }
+
+.qntPlus-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 50px;
+}
+
+.qnt {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.qntDiv {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 50px;
+}
+
+.qntMinus-button {}
 
 .delete-button {
     display: flex;
