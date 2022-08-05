@@ -3,6 +3,7 @@ const price = document.getElementById('price');
 let total = 0.00;
 let Dep = 0.05;
 price.innerText = '$ ' + total;
+var readyToPay = false;
 
 //product database
 let DrinkProducts = [
@@ -35,6 +36,10 @@ let miscellaneousProducts = [
 ];
 
 function create(product) {
+    //check for checkout
+    if (readyToPay === true) {
+        return;
+    }
     //item render
     const createItem = document.createElement('div');
     createItem.className = 'item-box';
@@ -87,6 +92,10 @@ function create(product) {
 
     //delete function
     function deleteItem() {
+        //check for checkout
+        if (readyToPay === true) {
+            return;
+        }
         createItem.remove();
         createItem.style.backgroundColor = "none"
         total = total - (product.price * qntAmnt);
@@ -101,6 +110,10 @@ function create(product) {
     // quanitity plus $ minus function
     let qntAmnt = product.qnt;
     function plus() {
+        //check for checkout
+        if (readyToPay === true) {
+            return;
+        }
         qntAmnt = qntAmnt + 1;
         quantity.innerText = qntAmnt;
         total = total + product.price;
@@ -108,6 +121,10 @@ function create(product) {
         price.innerText = '$ ' + total;
     }
     function minus() {
+        //check for checkout
+        if (readyToPay === true) {
+            return;
+        }
         if (qntAmnt === 1) {
             quantity.innerText = qntAmnt;
             return;
@@ -121,7 +138,28 @@ function create(product) {
 }
 //cart clear/reset total function
 function clearCart() {
+    readyToPay = false;
+    payScreen.remove();
+    payMessage.remove();
     screens.innerHTML = "";
     total = 0.00;
     price.innerText = '$ ' + total;
+}
+
+const payMessage = document.createElement('div');
+payMessage.className = 'payMessage';
+const payScreen = document.createElement('div');
+payScreen.className = 'payScreen';
+const cardButton = document.createElement('button');
+cardButton.className = 'cardButton';
+cardButton.innerText = 'Pay';
+function checkout() {
+    if (total === 0) {
+        return;
+    }
+    readyToPay = true;
+    payMessage.innerText = 'Total is: $ ' + total;
+    payScreen.appendChild(payMessage);
+    functionScreen.appendChild(payScreen);
+    payScreen.appendChild(cardButton);
 }
