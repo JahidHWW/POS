@@ -139,27 +139,49 @@ function create(product) {
 //cart clear/reset total function
 function clearCart() {
     readyToPay = false;
+    functionScreen.appendChild(defaultMessage);
     payScreen.remove();
     payMessage.remove();
+    postPayMessege.remove();
     screens.innerHTML = "";
     total = 0.00;
     price.innerText = '$ ' + total;
 }
 
+//default pay screen 
+const defaultMessage = document.createElement('div');
+defaultMessage.className = 'defaultMessage';
+defaultMessage.innerText = 'Welcome! Press Checkout when ready to pay.';
+functionScreen.appendChild(defaultMessage);
 const payMessage = document.createElement('div');
 payMessage.className = 'payMessage';
+//post payscreen / pay button
 const payScreen = document.createElement('div');
 payScreen.className = 'payScreen';
 const cardButton = document.createElement('button');
 cardButton.className = 'cardButton';
 cardButton.innerText = 'Pay';
+cardButton.onclick = pay;
+const cancelbutton = document.createElement('button');
+cancelbutton.innerText = '<-'
+
+//render function
 function checkout() {
     if (total === 0) {
         return;
     }
+    defaultMessage.remove();
     readyToPay = true;
     payMessage.innerText = 'Total is: $ ' + total;
-    payScreen.appendChild(payMessage);
     functionScreen.appendChild(payScreen);
+    payScreen.appendChild(payMessage);
     payScreen.appendChild(cardButton);
 }
+//after pay messege
+const postPayMessege = document.createElement('div');
+postPayMessege.className = 'postPayMessege';
+postPayMessege.innerText = 'Purchase Complete!';
+function pay() {
+    payScreen.appendChild(postPayMessege);
+}
+
