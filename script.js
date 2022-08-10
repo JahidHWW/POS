@@ -4,6 +4,7 @@ let total = 0.00;
 let Dep = 0.05;
 price.innerText = '$ ' + total;
 var readyToPay = false;
+var paid = false;
 
 //product database
 let DrinkProducts = [
@@ -90,6 +91,7 @@ function create(product) {
     total = Math.round(total * 100) / 100;
     price.innerText = '$ ' + total;
 
+
     //delete function
     function deleteItem() {
         //check for checkout
@@ -138,6 +140,7 @@ function create(product) {
 }
 //cart clear/reset total function
 function clearCart() {
+    paid = false;
     readyToPay = false;
     functionScreen.appendChild(defaultMessage);
     payScreen.remove();
@@ -163,17 +166,23 @@ cardButton.className = 'cardButton';
 cardButton.innerText = 'Pay';
 cardButton.onclick = pay;
 const cancelbutton = document.createElement('button');
-cancelbutton.innerText = '<-'
+cancelbutton.onclick = goBack;
+cancelbutton.className = 'cancelButton';
+cancelbutton.innerText = 'Cancel';
 
 //render function
 function checkout() {
     if (total === 0) {
         return;
     }
+    else if (paid === true) {
+        return;
+    }
     defaultMessage.remove();
     readyToPay = true;
     payMessage.innerText = 'Total is: $ ' + total;
     functionScreen.appendChild(payScreen);
+    payScreen.appendChild(cancelbutton);
     payScreen.appendChild(payMessage);
     payScreen.appendChild(cardButton);
 }
@@ -182,6 +191,15 @@ const postPayMessege = document.createElement('div');
 postPayMessege.className = 'postPayMessege';
 postPayMessege.innerText = 'Purchase Complete!';
 function pay() {
+    paid = true;
     payScreen.appendChild(postPayMessege);
 }
-
+//back-cancel button
+function goBack() {
+    if (paid === true) {
+        return;
+    }
+    paid = false;
+    readyToPay = false;
+    payScreen.remove();
+}

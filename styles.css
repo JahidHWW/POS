@@ -8,10 +8,11 @@ div {
     height: 700px;
     margin: auto;
     border-style: solid;
+    min-width: 900px;
 }
 
 .left-container {
-    background-color: lightgray;
+    background-color: #CFDAC8;
     border: none;
     border-right-width: 1px;
     border-right-style: solid;
@@ -19,7 +20,7 @@ div {
 
 .button-container {
     height: 400px;
-    background-color: lightgray;
+    background-color: #CFDAC8;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -45,13 +46,14 @@ div {
 }
 
 .right-container {
-    background-color: gray;
+    background-color: 7C9473;
     border: none;
+    min-width: 500px;
 }
 
 .screen-title {
     height: 40px;
-    background-color: gray;
+    background-color: 7C9473;
     text-align: center;
     font-size: 20px;
     font-weight: 600;
@@ -61,14 +63,17 @@ div {
 
 .screen-container {
     height: 600px;
-    background-color: white;
+    background-color: #E8EAE6;
     overflow: auto;
     border: none;
 
 }
 
 .price-screen {
-    background-color: lightgreen;
+    background-color: 7C9473;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-left: 5px;
     font-weight: bold;
 }
 
@@ -267,18 +272,20 @@ div {
 }
 
 .item-box {
-    height: 60px;
-    background-color: rgb(180, 180, 180);
-    margin-bottom: 2px;
+    height: 80px;
+    font-size: 18px;
+    background-color: CDD0CB;
+    margin-bottom: 3px;
     padding-left: 10px;
     padding-top: 5px;
     position: relative;
 }
 
 .qntPlus-button {
-    border-radius: 15px;
-    width: 25px;
-    height: 25px;
+    text-align: center;
+    border-radius: 25px;
+    width: 35px;
+    height: 35px;
     border: none;
     opacity: 1.0;
     transition: opacity 0.15s;
@@ -293,8 +300,8 @@ div {
 }
 
 .qnt {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .qntDiv {
@@ -302,14 +309,15 @@ div {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    right: 90px;
-    bottom: 18px;
+    right: 120px;
+    bottom: 25px;
 }
 
 .qntMinus-button {
-    border-radius: 15px;
-    width: 25px;
-    height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
     border: none;
     opacity: 1.0;
     transition: opacity 0.15s;
@@ -329,14 +337,14 @@ div {
     justify-content: center;
     position: absolute;
     right: 10px;
-    bottom: 15px;
-    width: 40px;
-    height: 30px;
+    bottom: 17px;
+    width: 60px;
+    height: 50px;
     font-size: 12px;
     background-color: white;
     color: rgb(207, 25, 25);
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     opacity: 1;
     transition: opacity 0.15s;
 }
@@ -394,7 +402,7 @@ div {
 }
 
 .function-screen {
-    background-color: white;
+    background-color: E8EAE6;
     border-style: solid;
     border-width: 1px;
     margin-top: 20px;
@@ -404,6 +412,7 @@ div {
 }
 
 .payScreen {
+    position: relative;
     height: 214px;
     display: flex;
     flex-direction: column;
@@ -442,4 +451,19 @@ div {
     text-align: center;
     margin-top: 15px;
     font-size: 20px;
+}
+
+.cancelButton {
+    position: absolute;
+    margin-right: 5px;
+    height: 40px;
+    width: 50px;
+    left: 0;
+    border: none;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: black;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    background-color: white;
 }
