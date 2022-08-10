@@ -194,7 +194,7 @@ function pay() {
     paid = true;
     payScreen.appendChild(postPayMessege);
 }
-//back-cancel button
+//back-cancel button / check for paid status
 function goBack() {
     if (paid === true) {
         return;
