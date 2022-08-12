@@ -422,7 +422,7 @@
 .cancelButton {
     position: absolute;
     font-weight: bold;
-    color: black;
+    color: red;
     margin-right: 5px;
     height: 40px;
     width: 55px;
