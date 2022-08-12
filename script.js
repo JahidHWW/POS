@@ -31,6 +31,18 @@ let snackProducts = [
     { item: 'Skittels-sour', price: 1.79, qnt: 1 },
     { item: 'SourPatchKids-exteme', price: 1.79, qnt: 1 }
 ];
+let chipsProducts = [
+    { item: 'Lays-Classic', price: 1.99, qnt: 1 },
+    { item: 'Lays-Limon', price: 1.99, qnt: 1 },
+    { item: 'Doritos-Nacho Cheese', price: 1.99, qnt: 1 },
+    { item: 'Doritos-Cool Ranch', price: 1.99, qnt: 1 },
+    { item: 'Cheetos-Crunchy', price: 1.99, qnt: 1 },
+    { item: 'Cheetos-Puffs', price: 1.99, qnt: 1 },
+    { item: 'Kettle-Jalapeno', price: 1.99, qnt: 1 },
+    { item: 'Kettle-Honey Dijon', price: 1.99, qnt: 1 },
+    { item: 'Pringles-Original', price: 2.29, qnt: 1 },
+    { item: 'Pringles-Sour Cream & Onion', price: 2.29, qnt: 1 }
+]
 
 let miscellaneousProducts = [
     { item: 'Bag', price: 0.05, qnt: 1 }
@@ -146,6 +158,7 @@ function clearCart() {
     payScreen.remove();
     payMessage.remove();
     postPayMessege.remove();
+    finish.remove();
     screens.innerHTML = "";
     total = 0.00;
     price.innerText = '$ ' + total;
@@ -190,11 +203,17 @@ function checkout() {
 const postPayMessege = document.createElement('div');
 postPayMessege.className = 'postPayMessege';
 postPayMessege.innerText = 'Purchase Complete!';
+
 function pay() {
     paid = true;
     payScreen.appendChild(postPayMessege);
+    payScreen.appendChild(finish);
 }
-//back-cancel button / check for paid status
+//back-cancel function / check for paid status
+const finish = document.createElement('Button');
+finish.innerText = 'Finish';
+finish.className = 'finish-button';
+finish.onclick = clearCart;
 function goBack() {
     if (paid === true) {
         return;
@@ -202,4 +221,5 @@ function goBack() {
     paid = false;
     readyToPay = false;
     payScreen.remove();
+    functionScreen.appendChild(defaultMessage);
 }

@@ -1,0 +1,459 @@
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6,
+.button7,
+.button8,
+.button9,
+.button10,
+.snack-button1,
+.snack-button2,
+.snack-button3,
+.snack-button4,
+.snack-button5,
+.snack-button6,
+.snack-button7,
+.snack-button8,
+.snack-button9,
+.snack-button10,
+.chips-button1,
+.chips-button2,
+.chips-button3,
+.chips-button4,
+.chips-button5,
+.chips-button6,
+.chips-button7,
+.chips-button8,
+.chips-button9,
+.chips-button10,
+.bag-button {
+    margin-top: 5px;
+    height: 55px;
+    width: 85px;
+    display: block;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: gray;
+}
+
+.button1 {
+    background: url(productPicture/drinkProducts/aquafina.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.button2 {
+    background: url(productPicture/drinkProducts/fijiWater.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.button3 {
+    background: url(productPicture/drinkProducts/pepsi.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.button4 {
+    background: url(productPicture/drinkProducts/canadaDry.jpg);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button5 {
+    background: url(productPicture/drinkProducts/gato-blue.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button6 {
+    background: url(productPicture/drinkProducts/gato-lemonLime.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button7 {
+    background: url(productPicture/drinkProducts/nakedMango.jpeg);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button8 {
+    background: url(productPicture/drinkProducts/nakedGreen.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button9 {
+    background: url(productPicture/drinkProducts/arizonaDrink.webp);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button10 {
+    background: url(productPicture/drinkProducts/pureleaf-Resberry.jpeg);
+    background-position: center;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.snack-button1 {
+    background: url(productPicture/snackProducts/mm-peanut.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button2 {
+    background: url(productPicture/snackProducts/mm-chocolate.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button3 {
+    background: url(productPicture/snackProducts/hersheys-CnC.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button4 {
+    background: url(productPicture/snackProducts/hersheys-wholeAlmonds.webp );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button5 {
+    background: url(productPicture/snackProducts/welchs-mixedFruit.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button6 {
+    background: url(productPicture/snackProducts/welchs-islandFruit.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button7 {
+    background: url(productPicture/snackProducts/haribo-goldBear.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button8 {
+    background: url(productPicture/snackProducts/haribo-happyCola.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button9 {
+    background: url(productPicture/snackProducts/skittles-sour.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.snack-button10 {
+    background: url(productPicture/snackProducts/sourpatch-extreme.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.bag-button {
+    background: url(productPicture/chipsProducts/bag.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button1 {
+    background: url(productPicture/chipsProducts/laysYellow.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button2 {
+    background: url(productPicture/chipsProducts/LaysLemon.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button3 {
+    background: url(productPicture/chipsProducts/doritosRed.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button4 {
+    background: url(productPicture/chipsProducts/doritosBlue.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button5 {
+    background: url(productPicture/chipsProducts/cheetos.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button6 {
+    background: url(productPicture/chipsProducts/cheetosPuff.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button7 {
+    background: url(productPicture/chipsProducts/kettleGreen.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button8 {
+    background: url(productPicture/chipsProducts/kettleYellow.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button9 {
+    background: url(productPicture/chipsProducts/pringlesRed.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.chips-button10 {
+    background: url(productPicture/chipsProducts/pringlesGreen.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.qntPlus-button {
+    text-align: center;
+    border-radius: 25px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    opacity: 1.0;
+    transition: opacity 0.15s;
+}
+
+.qntPlus-button:hover {
+    opacity: 0.7;
+}
+
+.qntPlus-button:active {
+    opacity: 0.5;
+}
+
+.qnt {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.qntDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 120px;
+    bottom: 25px;
+}
+
+.qntMinus-button {
+    border-radius: 25px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    opacity: 1.0;
+    transition: opacity 0.15s;
+}
+
+.qntMinus-button:hover {
+    opacity: 0.7;
+}
+
+.qntMinus-button:active {
+    opacity: 0.5;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    bottom: 17px;
+    width: 60px;
+    height: 50px;
+    font-size: 12px;
+    background-color: white;
+    color: rgb(207, 25, 25);
+    border: none;
+    border-radius: 25px;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.delete-button:hover {
+    opacity: 0.7;
+}
+
+.delete-button:active {
+    opacity: 0.5;
+}
+
+.voidCart-button {
+    width: 80px;
+    height: 40px;
+    color: red;
+    background-color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.voidCart-button:hover,
+.checkout-button:hover,
+.cardButton:hover,
+.cancelButton:hover,
+.finish-button:hover {
+    opacity: 0.8;
+}
+
+.voidCart-button:active,
+.checkout-button:active,
+.cardButton:active,
+.cancelButton:active,
+.finish-button:active {
+    opacity: 1;
+}
+
+.checkout-button {
+    width: 80px;
+    text-align: center;
+    height: 40px;
+    background-color: white;
+    color: green;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.cardButton {
+    color: white;
+    background-color: green;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.15s;
+    height: 40px;
+    width: 60px;
+}
+
+.cancelButton {
+    position: absolute;
+    font-weight: bold;
+    color: rgb(236, 84, 53);
+    margin-right: 5px;
+    height: 40px;
+    width: 55px;
+    left: 0;
+    top: 0;
+    border: none;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: black;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+
+.finish-button {
+    position: absolute;
+    font-weight: bold;
+    color: green;
+    height: 40px;
+    width: 55px;
+    right: 0;
+    top: 0;
+    border: none;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-color: black;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
