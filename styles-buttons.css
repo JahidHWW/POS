@@ -394,6 +394,8 @@
 .checkout-button {
     width: 80px;
     height: 40px;
+    text-align: center;
+    padding-right: 5px;
     background-color: white;
     color: green;
     font-weight: 600;
