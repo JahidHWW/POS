@@ -395,7 +395,7 @@
     width: 85px;
     height: 40px;
     text-align: center;
-    padding-right: 5px;
+    padding: 0px;
     background-color: white;
     color: green;
     font-weight: 600;
